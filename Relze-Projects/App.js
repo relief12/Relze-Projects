@@ -1,12 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default class App extends React.Component {
   render() {
+
+    let pic = {
+      uri: 'http://acscustomusa.com/wp-content/uploads/2017/06/DEADMAU5-e1497020381790.png'
+    };
     return (
-      <View style={styles.container}>
-        <Text>Dev Branch</Text>
-      </View>
+      <Image source={pic} style={{width: 193, height: 150, top:50, left:30}} />
+     
     );
   }
 }
