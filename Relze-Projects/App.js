@@ -8,8 +8,13 @@ export default class App extends React.Component {
       uri: 'http://acscustomusa.com/wp-content/uploads/2017/06/DEADMAU5-e1497020381790.png'
     };
     return (
-      <Image source={pic} style={{width: 193, height: 150, top:50, left:30}} />
-     
+      <View style={styles.container}>
+      <Image source={pic} style={{width: 193, height: 150}} />
+      <Text style={styles.normalText}>Just boring normal Text</Text>
+      <Text style={styles.fireText}> This is better</Text>
+      
+      </View>
+      
     );
   }
 }
@@ -21,4 +26,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  fireText:{
+    color: 'red',
+    fontWeight: 'bold',
+    fontSize: 40
+  },
+  normalText:{
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 10
+  }
 });
